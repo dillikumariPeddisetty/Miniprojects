@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root {
+    --main-color: #033a80;
+    --bg-color: #fff;
+    --text-color: #0f0c27;
+    --hover-color: #5805ff;
+
+    --big-font: 3.2rem;
+    --medium-font: 1.8rem;
+    --p-font: 0.941rem;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 10%;
+    background-color: var(--bg-color);
+    z-index: 1000;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+header.shadow {
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+
+.logo {
+    font-size: 1.61rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navbar a:hover {
+    color: var(--hover-color);
+}
+
+.navbar .bx {
+    font-size: 22px;
+    cursor: pointer;
+}
+section{
+    padding: 50px 10%;
+}
+
+.home{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social a{
+    font-size: 22px;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.home-text span{
+    font-size: var(--medium-font);
+    font-weight: 500;
+}
+.home-text h1{
+    font-size: var(--big-font);
+}
+.home-text h2{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.btn{
+    margin-top: 20px;
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.home-img img{
+    width: 100%;
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 30px;
+}
+
+.heading span{
+    color: #02a646;
+    font-size: var(--p-font);
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.about-img img{
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+.about-text p{
+    font-size: 20px;
+}
+
+.information{
+    margin: 1rem 0;
+}
+
+.info-box{
+    margin: 1rem 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.info-box a{
+    color: var(--text-color);
+}
+
+.info-box i{
+    font-size: 22px;
+    margin-right: 10px ;
+}
+
+.skills-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.skills-content img{
+    width: 70%;
+    margin-left: 6rem;
+}
+
+.bars{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 1rem;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.light-bar{
+    position: absolute;
+    bottom: 0;
+    background-color: hsla(260, 100%, 44%, 44%);
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.percentage-bar{
+    position: absolute;
+    bottom: 0;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--main-color);
+}
+
+.html-bar{
+    width: 80%;
+}
+
+.css-bar{
+    width: 70%;
+}
+
+.java-bar{
+    width: 99%;
+}
+
+.sql-bar{
+    width: 90%;
+}
+
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    justify-content: center;
+    margin-top: 3rem;
+    /* gap: 1rem; */
+}
+
+.services-icon{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 0.9rem;
+    box-shadow: 0 2px 7px rgba(215, 213, 213, 0.934);
+    border-bottom: 2px solid var(--main-color);
+
+}
+
+.services-icon:hover{
+    background-color: var(--hover-color);
+}
+
+.services-icon .bx {
+    font-size: 50px;
+    color: var(--main-color);
+    margin: 0.7rem 0 0.5rem;
+}
+
+.services-icon:hover .bx{
+    color: aqua;
+}
+
+.services-icon h3{
+    font-size: 17px;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.services-icon:hover h3{
+    color: white;
+}
+
+.services-icon a{
+    font-size: var(--p-font);
+    font-weight: 500;
+}
+
+.services-icon:hover a{
+    color: rgb(171, 171, 171);
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.portfolio-img{
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.portfolio-img img{
+    width: 100%;
+    display: block;
+}
+
+.portfolio-img img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.contact-forms{
+    /* display: flex;
+    justify-content: center; */
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.contact-forms form{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.contact-forms form .inp-1{
+    margin-bottom: 1rem;
+    padding: 15px;
+    border-radius: 0.5rem;
+    background-color: hsla(260, 100%, 44%,0.1);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+
+}
+
+form textarea{
+    resize: none;
+}
+
+form input::placeholder,
+textarea::placeholder{
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+form input{
+    height: 3.5rem;
+}
+
+form .send{
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+    align-self: center;
+    padding: 0.5rem 1.5rem;
+}
+
+.footer{
+    text-align: center;
+    background-color: #ebebeb;
+    padding: 30px;
+}
+
+.footer h1{
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.footer-icons a i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    background-color: #fff;
+    color: rgb(10, 26, 208);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.end{
+    background-color: var(--main-color);
+    padding: 20px;
+}
+
+.end p{
+    color: #fff;
+    text-align: center;
+}
